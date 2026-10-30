@@ -1,0 +1,7 @@
+{
+ "source": "PySCF 2.13.1 RHF/CCSD(T), cart=True, converged nonzero triples",
+ "basis_source_sha256": "27f955a987c01eb02e89e91e6fc30754c84bd55b239aca9da4a60c59a4995d19",
+ "e_scf": -74.96309733848699,
+ "e_ccsd": -0.049960396893434206,
+ "e_triples": -6.843558782373355e-05
+}

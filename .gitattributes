@@ -1,0 +1,3 @@
+# Preserve the exact official export bytes and recorded SHA256 checksums.
+third_party/basis_set_exchange/data/* -text
+third_party/basis_set_exchange/LICENSE -text

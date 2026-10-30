@@ -1,0 +1,140 @@
+{
+ "source": "sigma-SCF determinants from exact full-CI-space variances.\n\nFor unrestricted determinant orbitals (C_a, C_b) the determinant is a unit vector in the FCI\nspace of its own orbitals; the variance <(H - omega)^2> = |H Phi|^2 - 2 omega <H> + omega^2 is\nevaluated with PySCF direct_uhf sigma vectors, independently of the closed-form\nsingles/doubles expression used by hf-rs. The variance is minimized by SciPy BFGS over\noccupied-virtual rotations of each spin, with central-difference gradients, starting from\nPySCF RHF canonical orbitals with the occupied orbitals moved to the front. Contracted\nCartesian AO space, embedded basis data. No sigma-SCF implementation source is read.\n",
+ "pyscf_version": "2.14.0",
+ "cases": [
+  {
+   "name": "H2_doubly_excited",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      -0.7
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      0.0,
+      0.7
+     ]
+    }
+   ],
+   "constant": "BASIS_6_31G_GBS",
+   "charge": 0,
+   "alpha": [
+    1
+   ],
+   "beta": [
+    1
+   ],
+   "omega": -0.2,
+   "variance": 0.04519545805989342,
+   "energy": -0.04641525075080166,
+   "gradient_residual": 5.315192730392937e-10
+  },
+  {
+   "name": "H2_open_shell_determinant",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      -0.7
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      0.0,
+      0.7
+     ]
+    }
+   ],
+   "constant": "BASIS_6_31G_GBS",
+   "charge": 0,
+   "alpha": [
+    0
+   ],
+   "beta": [
+    1
+   ],
+   "omega": -0.6,
+   "variance": 0.024777565140404245,
+   "energy": -0.6616961910937931,
+   "gradient_residual": 2.7616797737550765e-09
+  },
+  {
+   "name": "HeH_cation_excited",
+   "atoms": [
+    {
+     "symbol": "He",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.1,
+      1.46
+     ]
+    }
+   ],
+   "constant": "BASIS_6_31G_GBS",
+   "charge": 1,
+   "alpha": [
+    0
+   ],
+   "beta": [
+    1
+   ],
+   "omega": -2.3,
+   "variance": 0.09211473181292185,
+   "energy": -2.05621605632686,
+   "gradient_residual": 2.6645352591003757e-10
+  },
+  {
+   "name": "LiH_HOMO_LUMO_triplet",
+   "atoms": [
+    {
+     "symbol": "Li",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.2,
+      0.1,
+      3.0
+     ]
+    }
+   ],
+   "constant": "STO_3G_GBS",
+   "charge": 0,
+   "alpha": [
+    0,
+    1,
+    2
+   ],
+   "beta": [
+    0
+   ],
+   "omega": -7.75,
+   "variance": 0.0011123237848806866,
+   "energy": -7.765994055782991,
+   "gradient_residual": 3.907985046680551e-09
+  }
+ ]
+}

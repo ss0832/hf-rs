@@ -1,0 +1,149 @@
+{
+ "source": "Infinite-chain RHF energies per unit cell from finite PySCF molecular chains.\n\nFor a gapped, closed-shell chain the RHF energy of an N-unit finite chain is\nE(N) = N e + b + c/N + ..., where e is the energy per cell of the infinite periodic RHF\nsolution. Nonpolar chains (alternating H2, capped trans-polyacetylene) converge\nexponentially, so e is the difference E(N+1) - E(N) at the largest N. The water chain has\ndipoles perpendicular to the axis; its dipole-dipole lattice tail gives the 1/N term, and e\nis obtained by least squares on E(N) = N e + b + c/N + d/N^2. A vacuum-padded PySCF pbc\ncalculation (dimension=3, GDF, Ewald exchange correction) is recorded as a coarse\ncross-check only; PySCF 2.14 does not build dimension=1 cells with uniform grids.\nContracted Cartesian AO space, embedded basis data. No periodic-HF source is read.\n",
+ "pyscf_version": "2.14.0",
+ "cases": [
+  {
+   "name": "H2_chain",
+   "constant": "STO_3G_GBS",
+   "lattice_constant": 4.0,
+   "unit": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      1.4
+     ]
+    }
+   ],
+   "energy_per_cell": -1.1014874656744418,
+   "extrapolation_change": 3.487876654162392e-11,
+   "chain_sizes": [
+    12,
+    16,
+    20,
+    24
+   ],
+   "chain_energies": [
+    -13.233097060169946,
+    -17.639046924134128,
+    -22.04499678697141,
+    -26.450946649669177
+   ],
+   "padded_pbc_energy": -1.1030254737751934
+  },
+  {
+   "name": "trans_polyacetylene",
+   "constant": "STO_3G_GBS",
+   "lattice_constant": 4.65,
+   "unit": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.68,
+      0.0
+     ]
+    },
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      -0.68,
+      2.2
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      2.7,
+      -0.4
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      -2.7,
+      2.6
+     ]
+    }
+   ],
+   "energy_per_cell": -75.92974544521178,
+   "extrapolation_change": 2.305910129507538e-08,
+   "chain_sizes": [
+    12,
+    16,
+    20,
+    24
+   ],
+   "chain_energies": [
+    -912.2827105989777,
+    -1216.0016928238651,
+    -1519.7206746969487,
+    -1823.4396564777958
+   ],
+   "padded_pbc_energy": -75.93085440093395
+  },
+  {
+   "name": "water_chain",
+   "constant": "STO_3G_GBS",
+   "lattice_constant": 5.5,
+   "unit": [
+    {
+     "symbol": "O",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.43,
+      1.1,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.43,
+      1.1,
+      0.0
+     ]
+    }
+   ],
+   "energy_per_cell": -74.9585193874363,
+   "extrapolation_change": 1.003044758363103e-09,
+   "fit_residual": 3.601599019020796e-10,
+   "chain_sizes": [
+    10,
+    14,
+    18,
+    22,
+    26,
+    30
+   ],
+   "chain_energies": [
+    -749.5901152524959,
+    -1049.424229597982,
+    -1349.2583276690589,
+    -1649.0924183062712,
+    -1948.92650492993,
+    -2248.7605891414405
+   ],
+   "padded_pbc_energy": -74.95853655504088
+  }
+ ]
+}

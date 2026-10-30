@@ -1,0 +1,188 @@
+{
+ "source": "Exact spin-projected UHF oracle in the full CI space.\n\nThe (broken-symmetry) PySCF UHF determinant is expanded in the determinant basis of its alpha\nmolecular orbitals (beta-string coefficients are minors of C_a^T S C_b), projected onto\nS = |S_z| with the Lowdin product projector built from the FCI S^2 operator, and its projected\nenergy <P Phi|H|P Phi>/<P Phi|P Phi> is evaluated with the FCI Hamiltonian. This is independent of\nthe spin-rotation quadrature used by hf-rs. Contracted Cartesian AO space, embedded basis data.\n",
+ "pyscf_version": "2.14.0",
+ "cases": [
+  {
+   "name": "H2_stretched",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      -2.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      2.0
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "e_uhf": -0.9358423299498186,
+   "s2_uhf": 0.963991845829502,
+   "e_projected": -0.9437613436345955,
+   "target_weight": 0.518004077085249,
+   "e_high_spin": -0.9273317156890137,
+   "s2_high_spin": 2.0
+  },
+  {
+   "name": "LiH_stretched",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "Li",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      0.2,
+      5.5
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "e_uhf": -7.789227472907005,
+   "s2_uhf": 0.9127445032268466,
+   "e_projected": -7.799553883048192,
+   "target_weight": 0.5436277501184976,
+   "e_high_spin": -7.779243548861766,
+   "s2_high_spin": 2.000001168010793
+  },
+  {
+   "name": "H4_rectangle",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      3.2,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      2.1,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      3.2,
+      2.1,
+      0.1
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "e_uhf": -2.0162295538941684,
+   "s2_uhf": 0.2780566016843691,
+   "e_projected": -2.0397094332184573,
+   "target_weight": 0.8655911738982836,
+   "e_high_spin": -1.8023361441468801,
+   "s2_high_spin": 2.0000000017804966
+  },
+  {
+   "name": "OH",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "O",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      -0.2,
+      1.84
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 1,
+   "e_uhf": -74.36365489479616,
+   "s2_uhf": 0.7534969475370907,
+   "e_projected": -74.36456028571286,
+   "target_weight": 0.9988343508209682,
+   "e_high_spin": -74.00575319041434,
+   "s2_high_spin": 3.7500000000000027
+  },
+  {
+   "name": "CH2_triplet",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.6,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.6,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 2,
+   "e_uhf": -38.41951227124981,
+   "s2_uhf": 2.0114614521933114,
+   "e_projected": -38.42175909023637,
+   "target_weight": 0.9971379098708366,
+   "e_high_spin": -37.64637531824197,
+   "s2_high_spin": 5.999999999999997
+  }
+ ],
+ "large_case": {
+  "name": "C2H4_twisted",
+  "method": "Independent NumPy spin-rotation quadrature, 16/24 nodes",
+  "e_uhf": -77.93062874686981,
+  "s2_uhf": 1.038843931222738,
+  "e_projected": -77.93796747424214,
+  "target_weight": 0.49357534779904194
+ }
+}

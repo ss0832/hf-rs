@@ -1,0 +1,87 @@
+{
+ "source": "Published Molpro F12 targets and an explicitly assumed comparison setup.\n\nSource: H.-J. Werner, molpro-user mailing list, 19 October 2008,\nhttps://www.molpro.net/pipermail/molpro-user/2008-October/002688.html (water dimer, row\n\"vdz-f12\"). The geometry (Angstrom, the dummy \"lp\" center omitted) and the published\nenergies are transcribed below. The post explicitly sets df_basis_exch=vtz, but does\nnot identify the RI/CABS basis, every numerical threshold, geminal fit coefficients,\nor all details of the 2008 implementation. Current documented defaults do not establish\nthose historical settings. The comparison setup below assumes OptRI, beta=1, two frozen\ncore orbitals and omitted core singles. These assumptions are not verified attributes\nof the publication. A first native comparison fails the printed-digit criterion;\nthese numbers remain diagnostic targets. Basis data come from the local BSE package\nor from its existing embedded export (no download).\n\nMolpro's release notes explicitly date the OptRI default to 2010.1 and a CABS\nconstruction/threshold change to 2009.1:\nhttps://www.molpro.net/manual/doku.php?id=recent_changes\n",
+ "bse_version": "0.12",
+ "name": "water_dimer_cc_pvdz_f12",
+ "atoms": [
+  {
+   "symbol": "O",
+   "position": [
+    0.12103485331246204,
+    -2.9370126398639655,
+    0.0
+   ]
+  },
+  {
+   "symbol": "H",
+   "position": [
+    -0.05208143969783784,
+    -1.1545776732104327,
+    0.0
+   ]
+  },
+  {
+   "symbol": "H",
+   "position": [
+    -1.5668340778668692,
+    -3.5893881304861233,
+    0.0
+   ]
+  },
+  {
+   "symbol": "O",
+   "position": [
+    -0.1019362275752931,
+    2.7875425352037757,
+    0.0
+   ]
+  },
+  {
+   "symbol": "H",
+   "position": [
+    0.6429032456037346,
+    3.568082382492179,
+    1.4262156548425085
+   ]
+  },
+  {
+   "symbol": "H",
+   "position": [
+    0.6429032456037346,
+    3.568082382492179,
+    -1.4262156548425085
+   ]
+  }
+ ],
+ "obs_g94": "H     0\nS    3   1.00\n     33.8700000              0.0060680\n      5.0950000              0.0453080\n      1.1590000              0.2028220\nS    1   1.00\n      0.3258000              1.0000000\nS    1   1.00\n      0.1027000              1.0000000\nP    1   1.00\n      1.1046000              1.0000000\nP    1   1.00\n      0.2845000              1.0000000\n****\nO     0\nS    8   1.00\n  15330.0000000              0.0005080\n   2299.0000000              0.0039290\n    522.4000000              0.0202430\n    147.3000000              0.0791810\n     47.5500000              0.2306870\n     16.7600000              0.4331180\n      6.2070000              0.3502600\n      0.6882000             -0.0081540\nS    1   1.00\n      1.7520000              1.0000000\nS    8   1.00\n  15330.0000000             -0.0001150\n   2299.0000000             -0.0008950\n    522.4000000             -0.0046360\n    147.3000000             -0.0187240\n     47.5500000             -0.0584630\n     16.7600000             -0.1364630\n      6.2070000             -0.1757400\n      0.6882000              0.6034180\nS    1   1.00\n      0.2384000              1.0000000\nS    1   1.00\n      0.0737600              1.0000000\nP    2   1.00\n     34.4600000              0.0159280\n      7.7490000              0.0997400\nP    1   1.00\n      2.2800000              1.0000000\nP    1   1.00\n      0.7156000              1.0000000\nP    1   1.00\n      0.2140000              1.0000000\nP    1   1.00\n      0.0597400              1.0000000\nD    1   1.00\n      1.4712000              1.0000000\nD    1   1.00\n      0.4799000              1.0000000\n****\n",
+ "cabs_g94": "H     0\nS    1   1.00\n      2.2968060              1.0000000\nS    1   1.00\n      0.7866850              1.0000000\nS    1   1.00\n      0.1569520              1.0000000\nP    1   1.00\n      5.3139520              1.0000000\nP    1   1.00\n      1.6549420              1.0000000\nP    1   1.00\n      0.7362720              1.0000000\nD    1   1.00\n      1.6617710              1.0000000\nD    1   1.00\n      0.4585010              1.0000000\n****\nO     0\nS    1   1.00\n     13.7568170              1.0000000\nS    1   1.00\n      2.6464580              1.0000000\nS    1   1.00\n      1.0249230              1.0000000\nS    1   1.00\n      0.1261390              1.0000000\nP    1   1.00\n      5.8694740              1.0000000\nP    1   1.00\n      1.0705700              1.0000000\nP    1   1.00\n      0.3279170              1.0000000\nP    1   1.00\n      0.1054650              1.0000000\nD    1   1.00\n     10.3389760              1.0000000\nD    1   1.00\n      3.4868050              1.0000000\nD    1   1.00\n      0.8377060              1.0000000\nD    1   1.00\n      0.2354000              1.0000000\nF    1   1.00\n      5.3860760              1.0000000\nF    1   1.00\n      1.7902360              1.0000000\nF    1   1.00\n      0.6282820              1.0000000\nG    1   1.00\n      1.8374740              1.0000000\n****\n",
+ "spherical": true,
+ "geminal_exponent": 1.0,
+ "frozen_core": 2,
+ "cabs_core_singles": false,
+ "published_settings": {
+  "df_basis_exch": "vtz"
+ },
+ "comparison_assumptions": {
+  "ri_basis": "cc-pvdz-f12-optri",
+  "geminal_exponent": 1.0,
+  "frozen_core": 2,
+  "cabs_core_singles": false,
+  "published_ri_basis_confirmed": false,
+  "printed_digit_agreement_verified": false
+ },
+ "historical_default_changes": {
+  "source": "https://www.molpro.net/manual/doku.php?id=recent_changes",
+  "optri_default_since": "2010.1",
+  "cabs_construction_changed": "2009.1",
+  "exact_2008_ri_settings_confirmed": false
+ },
+ "published": {
+  "rhf": -152.123795554166,
+  "cabs_singles": -0.013293840277,
+  "reference": -152.137089394443,
+  "mp2_correlation": -0.482269701797,
+  "mp2_f12_correlation": -0.593338690191,
+  "ccsd_t_f12a_correlation": -0.589941424263,
+  "ccsd_t_f12b_correlation": -0.577029504611
+ }
+}

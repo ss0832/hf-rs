@@ -1,0 +1,226 @@
+{
+ "source": "TCSCF oracle: PySCF singlet CASSCF(2,2) with the selected RHF HOMO/LUMO pair as the active\nspace (TCSCF = one-pair GVB = CASSCF(2,2) in natural orbitals), tight orbital convergence,\nactive natural occupations and PySCF analytic CASSCF nuclear gradients.\nContracted Cartesian AO space, embedded basis data.\n",
+ "pyscf_version": "2.14.0",
+ "cases": [
+  {
+   "name": "H2_stretched",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      -1.5
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      1.5
+     ]
+    }
+   ],
+   "bonding": 0,
+   "antibonding": 1,
+   "e_rhf": -0.8852750008977082,
+   "e_tcscf": -0.985156825524806,
+   "natural_occupations": [
+    1.694241388696853,
+    0.30575861130314735
+   ],
+   "gradient": [
+    [
+     0.0,
+     0.0,
+     -0.07235160919304326
+    ],
+    [
+     0.0,
+     0.0,
+     0.0723516091930432
+    ]
+   ]
+  },
+  {
+   "name": "LiH",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "Li",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.13,
+      0.21,
+      3.2
+     ]
+    }
+   ],
+   "bonding": 1,
+   "antibonding": 2,
+   "e_rhf": -7.857241138943198,
+   "e_tcscf": -7.878300330812296,
+   "natural_occupations": [
+    1.948454544048759,
+    0.051545455951240875
+   ],
+   "gradient": [
+    [
+     -0.0008379277719926994,
+     -0.0013535756316777788,
+     -0.02062591438747169
+    ],
+    [
+     0.0008379277719926977,
+     0.0013535756316777753,
+     0.020625914387471578
+    ]
+   ]
+  },
+  {
+   "name": "HF_stretched",
+   "basis_constant": "BASIS_6_31G_GBS",
+   "atoms": [
+    {
+     "symbol": "F",
+     "position": [
+      0.1,
+      -0.2,
+      0.3
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.17,
+      -0.11,
+      5.0
+     ]
+    }
+   ],
+   "bonding": 4,
+   "antibonding": 5,
+   "e_rhf": -99.67238202967107,
+   "e_tcscf": -99.86186581589546,
+   "natural_occupations": [
+    1.2312756863220822,
+    0.7687243136779179
+   ],
+   "gradient": [
+    [
+     -8.869618515950587e-05,
+     -0.0001140379523475914,
+     -0.005955315289254581
+    ],
+    [
+     8.869618515950327e-05,
+     0.00011403795234759487,
+     0.005955315289254304
+    ]
+   ]
+  },
+  {
+   "name": "twisted_ethylene",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      1.266
+     ]
+    },
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      -1.266
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      -1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.744,
+      0.0,
+      -2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.744,
+      0.0,
+      -2.336
+     ]
+    }
+   ],
+   "bonding": 7,
+   "antibonding": 8,
+   "e_rhf": -76.79755825765821,
+   "e_tcscf": -76.9901937042771,
+   "natural_occupations": [
+    1.0000002840757578,
+    0.9999997159242422
+   ],
+   "gradient": [
+    [
+     -3.1320567884032813e-16,
+     -2.68514589226701e-16,
+     -0.15805968278978444
+    ],
+    [
+     -4.5102810375396984e-17,
+     2.205704499594536e-16,
+     0.15805968651161795
+    ],
+    [
+     2.192310127440548e-08,
+     0.0015667104397987242,
+     -0.003947282131810725
+    ],
+    [
+     -2.1923101197625068e-08,
+     -0.001566710439798058,
+     -0.003947282131812058
+    ],
+    [
+     0.0015667125349974054,
+     2.1879063528836256e-08,
+     0.003947280270893083
+    ],
+    [
+     -0.0015667125349974054,
+     -2.1879063523184852e-08,
+     0.003947280270893305
+    ]
+   ]
+  }
+ ]
+}

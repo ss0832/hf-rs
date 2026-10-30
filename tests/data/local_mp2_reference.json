@@ -1,0 +1,49 @@
+{
+ "source": "PySCF 2.13.1 AO integrals, NumPy independent local Coulomb fits and dense full-tensor Galerkin solve",
+ "basis_source_sha256": "27f955a987c01eb02e89e91e6fc30754c84bd55b239aca9da4a60c59a4995d19",
+ "cart": true,
+ "e_strong": -0.012488205468691824,
+ "e_weak": -6.396049666091355e-06,
+ "delta_pno": -4.10772224884213e-10,
+ "e_corr": -0.01249460192913014,
+ "blocks": [
+  {
+   "i": 0,
+   "j": 0,
+   "domain": [
+    0
+   ],
+   "fit_domain": [
+    0
+   ],
+   "rank": 1,
+   "strong": true
+  },
+  {
+   "i": 1,
+   "j": 0,
+   "domain": [
+    0,
+    1
+   ],
+   "fit_domain": [
+    0,
+    1
+   ],
+   "rank": 2,
+   "strong": false
+  },
+  {
+   "i": 1,
+   "j": 1,
+   "domain": [
+    1
+   ],
+   "fit_domain": [
+    1
+   ],
+   "rank": 1,
+   "strong": true
+  }
+ ]
+}

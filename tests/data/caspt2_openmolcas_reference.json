@@ -1,0 +1,249 @@
+{
+  "source": "OpenMolcas 25.02-2, native Linux ELF executable oracle; canonical CORT metric convention for nonzero IPEA; STO-3G, no symmetry, bohr; residual convergence 1e-11",
+  "cases": [
+    {
+      "name": "H3+",
+      "key": "h3",
+      "charge": 1,
+      "active_electrons": 2,
+      "n_active": 2,
+      "atoms": [
+        {
+          "symbol": "H",
+          "position": [
+            0.1,
+            -0.2,
+            0.3
+          ]
+        },
+        {
+          "symbol": "H",
+          "position": [
+            0.4,
+            0.2,
+            1.7
+          ]
+        },
+        {
+          "symbol": "H",
+          "position": [
+            1.4,
+            -0.3,
+            -0.4
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -1.2377695357,
+          "log_sha256": "6a2e68f0e3ce8f7e96ca73dc87bc5921601032debb415cb04dc57ef38a1e8084",
+          "input": "&CASPT2\nIPEAshift=0\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -1.2377548013,
+          "log_sha256": "d3d034d0f338c8758e7073a30b670755362be1d8e86707efc226cef4207449fa",
+          "input": "&CASPT2\nIPEAshift=0\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -1.2377695221,
+          "log_sha256": "95c334826db288001407015a4714b5d30d623f72e975c3006fa514ce95334014",
+          "input": "&CASPT2\nIPEAshift=0\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -1.2377570488,
+          "log_sha256": "bca3993df246d7ffa398e0b193e0526df5596feede97dd3fbc616ef53201216d",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -1.2377424236,
+          "log_sha256": "5dd602e8a34103b6cf0049fdf783e4b9d96693b8bf354329500dfd9b1e2b6057",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -1.2377570354,
+          "log_sha256": "e5bfdfd613613aff240eedd9cf7295eed8cea5cb8d3cfaacf36c8dbbd52362ee",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        }
+      ],
+      "reference_input": "&GATEWAY\nCoord\n3\nH3 plus bohr\nH 0.1 -0.2 0.3\nH 0.4 0.2 1.7\nH 1.4 -0.3 -0.4\nBasis=STO-3G\nGroup=NoSym\n&SEWARD\n&SCF\nCharge=1\nSpin=1\n&RASSCF\nNactel=2 0 0\nInactive=0\nRas2=2\nSpin=1\nCiroot=1 1 1\nThrs=1e-12 1e-10 1e-10\nTight=1e-12 1e-12\n&CASPT2\nIPEAshift=0.0\nFrozen=0\n"
+    },
+    {
+      "name": "LiH",
+      "key": "lih",
+      "charge": 0,
+      "active_electrons": 2,
+      "n_active": 2,
+      "atoms": [
+        {
+          "symbol": "Li",
+          "position": [
+            0.1,
+            -0.2,
+            0.3
+          ]
+        },
+        {
+          "symbol": "H",
+          "position": [
+            0.4,
+            0.1,
+            3.2
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -7.8825547571,
+          "log_sha256": "3b5ebf6d7f1ba4b73f9d3eb8affd4f2062ca31415a2f769d8a162eabdadfb077",
+          "input": "&CASPT2\nIPEAshift=0\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -7.8825301575,
+          "log_sha256": "30c88d207d6db92247c1729a7f877e2b979a2ffb25f61d699fb82c19ea7c7989",
+          "input": "&CASPT2\nIPEAshift=0\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -7.8825544394,
+          "log_sha256": "a33a0ebacf019c0b4972314e3f61afedc333dcfaff04d140b0669f1ca79d292d",
+          "input": "&CASPT2\nIPEAshift=0\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -7.8825440778,
+          "log_sha256": "0b9672b0241635f673f83d279e412e07f91078c0602a513b1a00e446ed8b4a57",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -7.8825202174,
+          "log_sha256": "655a254b899cf1747e2e76972334b97c754cf281a393a6b4216c4e62ef15a1a5",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -7.8825437776,
+          "log_sha256": "6c95bf38077dc755714bdcab69a3a248b6553e4794de1019e8084c52bf01f830",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        }
+      ],
+      "reference_input": "&GATEWAY\nCoord\n2\nLiH bohr\nLi 0.1 -0.2 0.3\nH 0.4 0.1 3.2\nBasis=STO-3G\nGroup=NoSym\n&SEWARD\n&SCF\nCharge=0\nSpin=1\n&RASSCF\nNactel=2 0 0\nInactive=1\nRas2=2\nSpin=1\nCiroot=1 1 1\nThrs=1e-12 1e-10 1e-10\nTight=1e-12 1e-12\n&CASPT2\nIPEAshift=0.0\nFrozen=0\n"
+    },
+    {
+      "name": "BeH2",
+      "key": "beh2",
+      "charge": 0,
+      "active_electrons": 4,
+      "n_active": 4,
+      "atoms": [
+        {
+          "symbol": "Be",
+          "position": [
+            0.1,
+            -0.2,
+            0.3
+          ]
+        },
+        {
+          "symbol": "H",
+          "position": [
+            0.4,
+            0.1,
+            2.4
+          ]
+        },
+        {
+          "symbol": "H",
+          "position": [
+            1.2,
+            -0.1,
+            -1.6
+          ]
+        }
+      ],
+      "results": [
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -15.5500094101,
+          "log_sha256": "fa929e9166ea4505ee363757d2b23b1fe8347a51053d76e61054ad749b5d5462",
+          "input": "&GATEWAY\nCoord\n3\nBeH2 bohr\nBe 0.1 -0.2 0.3\nH 0.4 0.1 2.4\nH 1.2 -0.1 -1.6\nBasis=STO-3G\nGroup=NoSym\n&SEWARD\n&SCF\nCharge=0\nSpin=1\n&RASSCF\nNactel=4 0 0\nInactive=1\nRas2=4\nSpin=1\nCiroot=1 1 1\nThrs=1e-12 1e-10 1e-10\nTight=1e-12 1e-12\n&CASPT2\nIPEAshift=0\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -15.5499547974,
+          "log_sha256": "aba2b530f1c5d4bad44b84179b1973b96501bbc08d8cd05b3074607c7b5f68bc",
+          "input": "&CASPT2\nIPEAshift=0.0\nCORT\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.0,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -15.5500092892,
+          "log_sha256": "772e7579a39bd194f2924114ab74ed8c59b3f4ba7146d5d2efa592f34d044870",
+          "input": "&CASPT2\nIPEAshift=0.0\nCORT\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.0,
+          "e_total": -15.5499459813,
+          "log_sha256": "ab4e1b5b7519c5cdacca891d0a7794a1768f5946f446328b40cc9e8b304b75dd",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\n\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.17,
+          "imaginary_shift": 0.0,
+          "e_total": -15.5498924527,
+          "log_sha256": "4be3e685e8a9aedf73fbc73ec84fddd1a9c6ef90afdc922b52052c771f975b44",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nShift=0.17\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        },
+        {
+          "ipea_shift": 0.25,
+          "real_shift": 0.0,
+          "imaginary_shift": 0.12,
+          "e_total": -15.5499458651,
+          "log_sha256": "00f7ac307569c120789812efccd2715ddfa5b2c8d9ceff138e79f5badbd549d3",
+          "input": "&CASPT2\nIPEAshift=0.25\nCORT\nImaginary=0.12\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+        }
+      ],
+      "reference_input": "&GATEWAY\nCoord\n3\nBeH2 bohr\nBe 0.1 -0.2 0.3\nH 0.4 0.1 2.4\nH 1.2 -0.1 -1.6\nBasis=STO-3G\nGroup=NoSym\n&SEWARD\n&SCF\nCharge=0\nSpin=1\n&RASSCF\nNactel=4 0 0\nInactive=1\nRas2=4\nSpin=1\nCiroot=1 1 1\nThrs=1e-12 1e-10 1e-10\nTight=1e-12 1e-12\n&CASPT2\nIPEAshift=0\nFrozen=0\nMaxiter=300\nConvergence=1e-11\n"
+    }
+  ]
+}

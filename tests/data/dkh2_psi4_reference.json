@@ -1,0 +1,38 @@
+{
+ "source": "External-program oracle: Psi4 scalar-relativistic DKH (dkh_order 2) and X2C RHF energies.\n\nThe exact embedded Gaussian 94 basis data is supplied to Psi4 for both the orbital and the\nrelativistic basis (no decontraction), Cartesian functions, PK integrals and tight convergence.\nOnly the public input/output interface is used. Black-box experiments show that Psi4's DKH backend\nuses the speed of light 137.0359895 a.u. and its X2C the CODATA 2014 value 137.035999139 a.u.; the\nhf-rs comparisons pass these values explicitly. An independent NumPy DKH2 at c = 137.0359895\nreproduces the DKH energies to 1e-11 Eh.\n",
+ "psi4_version": "1.11",
+ "dkh_speed_of_light": 137.0359895,
+ "cases": [
+  {
+   "name": "Ne",
+   "e_nonrelativistic": -126.6045250886879,
+   "e_dkh2": -126.71694152562287,
+   "e_x2c": -126.71694151602487
+  },
+  {
+   "name": "Ar",
+   "e_nonrelativistic": -521.2228808035305,
+   "e_dkh2": -522.7190467071399,
+   "e_x2c": -522.7190479547473
+  },
+  {
+   "name": "water",
+   "e_nonrelativistic": -75.97644312718184,
+   "e_dkh2": -76.03124696492974,
+   "e_x2c": -76.03124717234768
+  },
+  {
+   "name": "HCl",
+   "e_nonrelativistic": -460.0367934247877,
+   "e_dkh2": -461.49386764095794,
+   "e_x2c": -461.4938697201733
+  },
+  {
+   "name": "Kr",
+   "e_nonrelativistic": -2723.706162781216,
+   "e_dkh2": -2753.341853474778,
+   "e_x2c": -2753.3424035633184
+  }
+ ],
+ "x2c_speed_of_light": 137.035999139
+}

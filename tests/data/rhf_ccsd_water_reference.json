@@ -1,0 +1,9 @@
+{
+  "input_fixture": "psi4_mp2_f12_published_reference.json#cases/0",
+  "spherical": true,
+  "frozen_core": 0,
+  "source": "PySCF 2.13.1 public RHF/CCSD execution",
+  "e_scf": -76.05848853057267,
+  "e_corr": -0.27043630847370687,
+  "e_total": -76.32892483904638
+}

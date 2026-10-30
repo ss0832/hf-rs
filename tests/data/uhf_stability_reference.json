@@ -1,0 +1,323 @@
+{
+ "source": "Dense real UHF -> UHF orbital Hessians from PySCF MO integrals.\n\n(A + B)_{ai s, bj t} = d_st (d_ij F_ab - d_ab F_ij) + 2 (ai|bj) - d_st [(ab|ij) + (aj|bi)]\nis assembled explicitly with ao2mo for the stationary UHF determinants of the PUHF oracle\n(broken-symmetry singlets after instability following, OH doublet, CH2 triplet), the stable\nbroken-symmetry twisted-ethylene solution, and the closed-shell (RHF) twisted-ethylene point,\nwhose lowest eigenvalue is its triplet instability. hf-rs forms Hessian-vector products\nAO-direct and solves for the lowest eigenpair iteratively; no implementation source is read.\n",
+ "pyscf_version": "2.14.0",
+ "cases": [
+  {
+   "name": "H2_stretched",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      -2.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      2.0
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "broken_symmetry": true,
+   "e_uhf": -0.9358423299498186,
+   "s2_uhf": 0.963991845829502,
+   "lowest_eigenvalues": [
+    0.5132349825372734,
+    0.5472774395715521
+   ]
+  },
+  {
+   "name": "LiH_stretched",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "Li",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      0.2,
+      5.5
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "broken_symmetry": true,
+   "e_uhf": -7.789227472907003,
+   "s2_uhf": 0.9127445032440298,
+   "lowest_eigenvalues": [
+    0.07694138818520176,
+    0.08753730049530285,
+    0.08753730049530374,
+    0.318903359670793
+   ]
+  },
+  {
+   "name": "H4_rectangle",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      3.2,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      2.1,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      3.2,
+      2.1,
+      0.1
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "broken_symmetry": true,
+   "e_uhf": -2.0162295538941684,
+   "s2_uhf": 0.2780566016650339,
+   "lowest_eigenvalues": [
+    0.06429290157459261,
+    0.10292076735914192,
+    0.47575629990279616,
+    0.562838271910534
+   ]
+  },
+  {
+   "name": "OH",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "O",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.1,
+      -0.2,
+      1.84
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 1,
+   "broken_symmetry": false,
+   "e_uhf": -74.36365489479618,
+   "s2_uhf": 0.7534969475370934,
+   "lowest_eigenvalues": [
+    3.7803254733620625e-15,
+    0.2274320908067863,
+    0.3489503634710535,
+    0.389564637814978
+   ]
+  },
+  {
+   "name": "CH2_triplet",
+   "basis_constant": "STO_3G_GBS",
+   "atoms": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.6,
+      0.0,
+      1.0
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.6,
+      0.0,
+      1.0
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 2,
+   "broken_symmetry": false,
+   "e_uhf": -38.41951227124982,
+   "s2_uhf": 2.0114614521933087,
+   "lowest_eigenvalues": [
+    0.3628023120878878,
+    0.4123440942252004,
+    0.5651722410123393,
+    0.5748346316091082
+   ]
+  },
+  {
+   "name": "C2H4_twisted_broken_symmetry",
+   "basis_constant": "BASIS_6_31G_GBS",
+   "atoms": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      1.266
+     ]
+    },
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      -1.266
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      -1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.744,
+      0.0,
+      -2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.744,
+      0.0,
+      -2.336
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "broken_symmetry": true,
+   "e_uhf": -77.9306287468698,
+   "s2_uhf": 1.038843931222746,
+   "lowest_eigenvalues": [
+    0.18561437034149095,
+    0.19106467340014627,
+    0.30854610325706094,
+    0.3085461032802855
+   ]
+  },
+  {
+   "name": "C2H4_twisted_closed_shell",
+   "basis_constant": "BASIS_6_31G_GBS",
+   "atoms": [
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      1.266
+     ]
+    },
+    {
+     "symbol": "C",
+     "position": [
+      0.0,
+      0.0,
+      -1.266
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      0.0,
+      -1.744,
+      2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      1.744,
+      0.0,
+      -2.336
+     ]
+    },
+    {
+     "symbol": "H",
+     "position": [
+      -1.744,
+      0.0,
+      -2.336
+     ]
+    }
+   ],
+   "charge": 0,
+   "spin_2s": 0,
+   "broken_symmetry": false,
+   "e_uhf": -77.82600651336712,
+   "s2_uhf": 4.440892098500626e-15,
+   "lowest_eigenvalues": [
+    -0.20237211389821597,
+    0.06599432129517356,
+    0.18007426560508602,
+    0.19488044881749886
+   ]
+  }
+ ]
+}

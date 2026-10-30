@@ -1,0 +1,36 @@
+{
+  "mol_name": "water",
+  "basis_set_description": "Sample BasisSetExchange format STO-3G for H and O",
+  "elements": {
+    "1": {
+      "electron_shells": [
+        {
+          "angular_momentum": [0],
+          "exponents": ["3.42525091", "0.62391373", "0.16885540"],
+          "coefficients": [
+            ["0.15432897", "0.53532814", "0.44463454"]
+          ]
+        }
+      ]
+    },
+    "8": {
+      "electron_shells": [
+        {
+          "angular_momentum": [0],
+          "exponents": ["130.7093200", "23.8088610", "6.4436083"],
+          "coefficients": [
+            ["0.15432897", "0.53532814", "0.44463454"]
+          ]
+        },
+        {
+          "angular_momentum": [0, 1],
+          "exponents": ["5.0331513", "1.1695961", "0.3803890"],
+          "coefficients": [
+            ["-0.09996723", "0.39951283", "0.70011547"],
+            ["0.15591627", "0.60768372", "0.39195739"]
+          ]
+        }
+      ]
+    }
+  }
+}

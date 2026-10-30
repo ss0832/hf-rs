@@ -1,0 +1,119 @@
+{
+  "source_files": [
+    "scf_reference.json",
+    "scs_mp3_reference.json",
+    "ccsd_triples_reference.json"
+  ],
+  "cases": [
+    {
+      "name": "H2/STO-3G",
+      "method": "hf",
+      "atomic_numbers": [
+        1,
+        1
+      ],
+      "positions": [
+        [
+          0,
+          0,
+          -0.7
+        ],
+        [
+          0,
+          0,
+          0.7
+        ]
+      ],
+      "basis": "sto-3g",
+      "energy": -1.1167143251757503,
+      "tolerance": 1e-09
+    },
+    {
+      "name": "Water/STO-3G mp2",
+      "method": "mp2",
+      "atomic_numbers": [
+        8,
+        1,
+        1
+      ],
+      "positions": [
+        [
+          0.13,
+          -0.21,
+          0.31
+        ],
+        [
+          0.23,
+          1.22,
+          -0.77
+        ],
+        [
+          -0.08,
+          -1.64,
+          -0.83
+        ]
+      ],
+      "basis": "sto-3g",
+      "energy": -74.99897058023741,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "Water/STO-3G scs-mp3",
+      "method": "scs-mp3",
+      "atomic_numbers": [
+        8,
+        1,
+        1
+      ],
+      "positions": [
+        [
+          0.13,
+          -0.21,
+          0.31
+        ],
+        [
+          0.23,
+          1.22,
+          -0.77
+        ],
+        [
+          -0.08,
+          -1.64,
+          -0.83
+        ]
+      ],
+      "basis": "sto-3g",
+      "energy": -75.00679943846995,
+      "tolerance": 1e-08
+    },
+    {
+      "name": "Water/STO-3G ccsd(t)",
+      "method": "ccsd(t)",
+      "atomic_numbers": [
+        8,
+        1,
+        1
+      ],
+      "positions": [
+        [
+          0.13,
+          -0.21,
+          0.31
+        ],
+        [
+          0.23,
+          1.22,
+          -0.77
+        ],
+        [
+          -0.08,
+          -1.64,
+          -0.83
+        ]
+      ],
+      "basis": "sto-3g",
+      "energy": -75.01312617096825,
+      "tolerance": 1e-08
+    }
+  ]
+}
